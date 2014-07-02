@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body class="login">      
+<div class="container">
+    <div class="text-center">
+        <h1>VULCANTECH-SIGNIN</h1>
+    </div>
+    <div class="tab-content">
+        <div id="login" class="tab-pane active">
+            <form action="/" class="form-signin" method="POST">
+                {% csrf_token %}
+				
+				{% if message != "" %}
+				<div class="alert alert-error bg-danger">
+					{{ message }}
+				</div>
+				{% endif %}
+                <p class="text-muted text-center">
+                    Enter username and password
+                </p>
+                <input type="text" id="login_username" name="login_username" placeholder="Username" class="form-control" value="{{ username }}">
+                <input type="password" id="login_password" name="login_password" placeholder="Password" class="form-control">
+                <input type="hidden" id="mobil_desktop" name="mobil_desktop" >
+                <button id="acceso" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+        </div>
+    </div>
+</div> 
+  </body>
+  {% endblock %}

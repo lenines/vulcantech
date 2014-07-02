@@ -1,0 +1,9 @@
+{% extends "master.html" %}
+
+{% block userLogin%}
+	{{user.username}}
+{% endblock %}
+
+{% block fecha %}
+	{{user.last_login|date:"SHORT_DATE_FORMAT"}}
+{% endblock %}

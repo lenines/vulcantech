@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>VULCANTECH-SIGNIN</title>
+
+    <link rel="stylesheet" href="{{STATIC_URL}}assets/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}assets/css/main.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}assets/lib/magic/magic.css">
+    {% block styles %}{% endblock %}
+
+
+    <script src="{{STATIC_URL}}assets/lib/jquery-2.0.3.min.js"></script>
+    <script src="{{STATIC_URL}}assets/lib/bootstrap/js/bootstrap.js"></script>
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

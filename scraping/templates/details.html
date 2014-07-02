@@ -1,0 +1,20 @@
+{% extends "scraping.html" %}
+
+ {% block menuleft%}
+   {% for k,v in categories.items %}
+	<li class="panel ">
+        <a href="{{k}}" data-parent="#menu" data-toggle="collapse" class="accordion-toggle collapsed"
+           data-target="#form-nav">
+            <i class="icon-pencil"></i> {{v}}
+	    <span class="pull-right">
+		<i class="icon-angle-left"></i>
+            </span>
+        </a>
+	</li>
+	{% endfor %}
+
+	
+{% endblock %}
+{% block datos%}
+         {{content|safe}}              
+{% endblock %} 
