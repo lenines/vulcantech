@@ -7,6 +7,7 @@ Requirements:
  3. BeautifulSoup4
  
  Install:
+
     pip install django==1.6                                                                                                  
     pip install BeautifulSoup4
    
