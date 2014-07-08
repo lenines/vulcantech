@@ -10,4 +10,7 @@ Requirements:
 
     pip install django==1.6                                                                                                  
     pip install BeautifulSoup4
-   
+    
+    
+username: vulcantech                                                                                                             
+password: vulcantech 
