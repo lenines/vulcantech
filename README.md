@@ -14,3 +14,8 @@ Requirements:
     
 username: vulcantech                                                                                                             
 password: vulcantech 
+
+
+click in task3:
+             http://prntscr.com/411ffj
+             http://prntscr.com/411fmc
